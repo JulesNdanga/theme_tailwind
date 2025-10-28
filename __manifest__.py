@@ -8,6 +8,12 @@
     'version': '19.0.1.0.0',
     'author': 'Your Company',
     'license': 'LGPL-3',
+    # Set a price and currency for the theme.  According to the Odoo vendor
+    # guidelines, the minimum price is 9 EUR if the module is paid【338510115502247†L256-L259】.
+    # Leaving these keys empty would make the theme free.  Here we set the
+    # minimum price in euros.
+    'price': 9,
+    'currency': 'EUR',
     'depends': ['website'],
     'data': [
         'views/assets.xml',

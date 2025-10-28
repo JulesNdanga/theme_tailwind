@@ -1,0 +1,502 @@
+<odoo>
+    <!--
+        Custom homepage replicating the main sections of the Base Tailwind template.
+        The page is built using Tailwind CSS classes and the original images
+        included in this module. When you install the theme, this page becomes
+        available from the Pages menu. You can further edit it with the Website
+        builder to fit your branding and content. The page inherits from
+        ``website.layout`` so it automatically includes the standard header and
+        footer. The images are served from ``/theme_base_tailwind/static/src/img``.
+    -->
+    <template id="base_tailwind_homepage" name="Base Tailwind Home" page="True">
+        <t t-call="website.layout">
+            <t t-set="title">Base Tailwind</t>
+            <!-- Hero section -->
+            <section class="relative overflow-hidden bg-white dark:bg-gray-900 py-20">
+                <!-- Decorative shapes behind the hero -->
+                <div class="absolute inset-0 pointer-events-none">
+                    <img t-att-src="'/theme_base_tailwind/static/src/img/shape-01.svg'" class="absolute top-0 left-0 w-32 opacity-50" alt="Shape" />
+                    <img t-att-src="'/theme_base_tailwind/static/src/img/shape-02.svg'" class="absolute top-10 right-0 w-24 opacity-50" alt="Shape" />
+                    <img t-att-src="'/theme_base_tailwind/static/src/img/shape-03.svg'" class="absolute bottom-10 left-10 w-40 opacity-50" alt="Shape" />
+                    <img t-att-src="'/theme_base_tailwind/static/src/img/shape-04.svg'" class="absolute bottom-0 right-0 w-24 opacity-50" alt="Shape" />
+                </div>
+                <div class="container mx-auto relative z-10 px-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-white mb-6">
+                                We specialize in UI/UX, Web Development, Digital Marketing.
+                            </h1>
+                            <p class="text-gray-600 dark:text-gray-300 mb-8 max-w-xl">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                                fringilla magna mauris. Nulla fermentum viverra sem eu rhoncus
+                                consequat varius nisi quis, posuere magna.
+                            </p>
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                                <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded shadow">
+                                    Get Started Now
+                                </a>
+                                <span class="text-gray-700 dark:text-gray-400 text-sm">
+                                    <strong class="font-semibold">Call us (0123) 456–789</strong> For any question or concern
+                                </span>
+                            </div>
+                        </div>
+                        <div class="hidden lg:block">
+                            <img t-att-src="'/theme_base_tailwind/static/src/img/hero.png'" alt="Hero" class="w-full h-auto" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features section -->
+            <section id="features" class="py-20 bg-gray-50 dark:bg-gray-900">
+                <div class="container mx-auto px-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                        <div>
+                            <div class="flex justify-center mb-4">
+                                <img t-att-src="'/theme_base_tailwind/static/src/img/icon-01.svg'" alt="Support" class="w-12 h-12" />
+                            </div>
+                            <h4 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">24/7 Support</h4>
+                            <p class="text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet conse adipiscing elit.</p>
+                        </div>
+                        <div>
+                            <div class="flex justify-center mb-4">
+                                <img t-att-src="'/theme_base_tailwind/static/src/img/icon-02.svg'" alt="Ownership" class="w-12 h-12" />
+                            </div>
+                            <h4 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Take Ownership</h4>
+                            <p class="text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet conse adipiscing elit.</p>
+                        </div>
+                        <div>
+                            <div class="flex justify-center mb-4">
+                                <img t-att-src="'/theme_base_tailwind/static/src/img/icon-03.svg'" alt="Team Work" class="w-12 h-12" />
+                            </div>
+                            <h4 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Team Work</h4>
+                            <p class="text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet conse adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About section -->
+            <section id="about" class="py-20">
+                <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <img t-att-src="'/theme_base_tailwind/static/src/img/shape-05.svg'" class="w-12 h-12" alt="Shape" />
+                            <img t-att-src="'/theme_base_tailwind/static/src/img/about-01.png'" class="rounded-lg shadow" alt="About" />
+                            <img t-att-src="'/theme_base_tailwind/static/src/img/about-02.png'" class="rounded-lg shadow" alt="About" />
+                        </div>
+                        <div class="space-y-4">
+                            <img t-att-src="'/theme_base_tailwind/static/src/img/shape-06.svg'" class="w-12 h-12" alt="Shape" />
+                            <img t-att-src="'/theme_base_tailwind/static/src/img/about-03.png'" class="rounded-lg shadow" alt="About" />
+                            <img t-att-src="'/theme_base_tailwind/static/src/img/shape-07.svg'" class="w-12 h-12" alt="Shape" />
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-blue-600 uppercase tracking-widest mb-2 font-semibold">Why Choose Us</h4>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
+                            We Make Our customers happy by giving Best services.
+                        </h2>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6">
+                            It is a long established fact that a reader will be distracted by the readable content
+                            of a page when looking at its layout. The point of using Lorem Ipsum.
+                        </p>
+                        <a href="#" class="text-blue-600 hover:underline font-medium inline-flex items-center">
+                            See how we work
+                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services section -->
+            <section id="services" class="py-20 bg-gray-50 dark:bg-gray-900">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-2">
+                            Our Services
+                        </h2>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            We offer the best quality service for you
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                        <div>
+                            <div class="flex justify-center mb-4">
+                                <img t-att-src="'/theme_base_tailwind/static/src/img/icon-04.svg'" alt="Startups" class="w-12 h-12" />
+                            </div>
+                            <h4 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Crafted for Startups</h4>
+                            <p class="text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+                        </div>
+                        <div>
+                            <div class="flex justify-center mb-4">
+                                <img t-att-src="'/theme_base_tailwind/static/src/img/icon-05.svg'" alt="Design" class="w-12 h-12" />
+                            </div>
+                            <h4 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">High-quality Design</h4>
+                            <p class="text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+                        </div>
+                        <div>
+                            <div class="flex justify-center mb-4">
+                                <img t-att-src="'/theme_base_tailwind/static/src/img/icon-06.svg'" alt="Essential" class="w-12 h-12" />
+                            </div>
+                            <h4 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">All Essential Sections</h4>
+                            <p class="text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+                        </div>
+                        <div>
+                            <div class="flex justify-center mb-4">
+                                <img t-att-src="'/theme_base_tailwind/static/src/img/icon-07.svg'" alt="Speed" class="w-12 h-12" />
+                            </div>
+                            <h4 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Speed Optimized</h4>
+                            <p class="text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+                        </div>
+                        <div>
+                            <div class="flex justify-center mb-4">
+                                <img t-att-src="'/theme_base_tailwind/static/src/img/icon-05.svg'" alt="Customizable" class="w-12 h-12" />
+                            </div>
+                            <h4 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Fully Customizable</h4>
+                            <p class="text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+                        </div>
+                        <div>
+                            <div class="flex justify-center mb-4">
+                                <img t-att-src="'/theme_base_tailwind/static/src/img/icon-06.svg'" alt="Updates" class="w-12 h-12" />
+                            </div>
+                            <h4 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Regular Updates</h4>
+                            <p class="text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pricing section -->
+            <section id="pricing" class="py-20">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-2">
+                            We Offer Great Affordable Premium Prices
+                        </h2>
+                        <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Plan 1 -->
+                        <div class="p-8 border rounded-lg text-center shadow-sm">
+                            <h4 class="text-xl font-semibold mb-4">Starter</h4>
+                            <div class="flex justify-center items-baseline mb-4">
+                                <h2 class="text-4xl font-bold text-blue-600 mr-2">$29</h2>
+                                <span class="text-gray-600 dark:text-gray-400">/per month</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">No credit card required</p>
+                            <ul class="text-gray-600 dark:text-gray-400 space-y-2 mb-6">
+                                <li>400 GB Storage</li>
+                                <li>Unlimited Photos &amp; Videos</li>
+                                <li>Exclusive Support</li>
+                            </ul>
+                            <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded">Try for free</a>
+                            <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">7‑day free trial</p>
+                        </div>
+                        <!-- Plan 2 -->
+                        <div class="p-8 border-2 border-blue-600 rounded-lg text-center shadow-sm">
+                            <h4 class="text-xl font-semibold mb-4">Growth Plan</h4>
+                            <div class="flex justify-center items-baseline mb-4">
+                                <h2 class="text-4xl font-bold text-blue-600 mr-2">$59</h2>
+                                <span class="text-gray-600 dark:text-gray-400">/per month</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">No credit card required</p>
+                            <ul class="text-gray-600 dark:text-gray-400 space-y-2 mb-6">
+                                <li>400 GB Storage</li>
+                                <li>Unlimited Photos &amp; Videos</li>
+                                <li>Exclusive Support</li>
+                            </ul>
+                            <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded">Try for free</a>
+                            <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">7‑day free trial</p>
+                        </div>
+                        <!-- Plan 3 -->
+                        <div class="p-8 border rounded-lg text-center shadow-sm">
+                            <h4 class="text-xl font-semibold mb-4">Business</h4>
+                            <div class="flex justify-center items-baseline mb-4">
+                                <h2 class="text-4xl font-bold text-blue-600 mr-2">$139</h2>
+                                <span class="text-gray-600 dark:text-gray-400">/per month</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">No credit card required</p>
+                            <ul class="text-gray-600 dark:text-gray-400 space-y-2 mb-6">
+                                <li>400 GB Storage</li>
+                                <li>Unlimited Photos &amp; Videos</li>
+                                <li>Exclusive Support</li>
+                            </ul>
+                            <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded">Try for free</a>
+                            <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">7‑day free trial</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects section -->
+            <section id="projects" class="py-20 bg-gray-50 dark:bg-gray-900">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-2">
+                            Our Projects
+                        </h2>
+                        <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                            We offer great affordable premium prices. It is a long established fact that a reader will
+                            be distracted by the readable content of a page when looking at its layout.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="relative group overflow-hidden rounded-lg shadow">
+                            <img t-att-src="'/theme_base_tailwind/static/src/img/project-01.png'" alt="Project" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-medium">Branded Ecommerce</div>
+                        </div>
+                        <div class="relative group overflow-hidden rounded-lg shadow">
+                            <img t-att-src="'/theme_base_tailwind/static/src/img/project-02.png'" alt="Project" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-medium">Branded Ecommerce</div>
+                        </div>
+                        <div class="relative group overflow-hidden rounded-lg shadow">
+                            <img t-att-src="'/theme_base_tailwind/static/src/img/project-03.png'" alt="Project" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-medium">Branded Ecommerce</div>
+                        </div>
+                        <div class="relative group overflow-hidden rounded-lg shadow">
+                            <img t-att-src="'/theme_base_tailwind/static/src/img/project-04.png'" alt="Project" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-medium">Branded Ecommerce</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonial section -->
+            <section id="testimonial" class="py-20">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-2">
+                            Client’s Testimonials
+                        </h2>
+                        <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                            It is a long established fact that a reader will be distracted by the readable content
+                            of a page when looking at its layout.
+                        </p>
+                    </div>
+                    <div class="max-w-3xl mx-auto">
+                        <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow text-center relative">
+                            <span class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blue-600 text-white rounded-full p-3">
+                                <img t-att-src="'/theme_base_tailwind/static/src/img/icon-quote.svg'" alt="Quote" class="w-6 h-6" />
+                            </span>
+                            <img t-att-src="'/theme_base_tailwind/static/src/img/testimonial.png'" alt="User" class="w-24 h-24 rounded-full mx-auto mb-4" />
+                            <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat quis
+                                enim sed, ullamcorper semper ligula. Mauris consequat justo volutpat.
+                            </p>
+                            <div class="flex items-center justify-center space-x-2">
+                                <span class="font-semibold text-gray-800 dark:text-white">Devid Smith</span>
+                                <span class="text-gray-500 dark:text-gray-400">Founder @democompany</span>
+                            </div>
+                            <div class="mt-4 flex justify-center space-x-4 opacity-70">
+                                <img t-att-src="'/theme_base_tailwind/static/src/img/brand-light-02.svg'" alt="Brand" class="h-6" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Counter section -->
+            <section id="counter" class="py-20 bg-gray-50 dark:bg-gray-900">
+                <div class="container mx-auto px-6">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                        <div>
+                            <h2 class="text-4xl font-bold text-blue-600 mb-2">785</h2>
+                            <p class="text-gray-600 dark:text-gray-400">Global Brands</p>
+                        </div>
+                        <div>
+                            <h2 class="text-4xl font-bold text-blue-600 mb-2">533</h2>
+                            <p class="text-gray-600 dark:text-gray-400">Happy Clients</p>
+                        </div>
+                        <div>
+                            <h2 class="text-4xl font-bold text-blue-600 mb-2">865</h2>
+                            <p class="text-gray-600 dark:text-gray-400">Winning Awards</p>
+                        </div>
+                        <div>
+                            <h2 class="text-4xl font-bold text-blue-600 mb-2">346</h2>
+                            <p class="text-gray-600 dark:text-gray-400">Projects Delivered</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Clients section -->
+            <section id="clients" class="py-20">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-2">
+                            Trusted by Global Brands
+                        </h2>
+                        <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                            It is a long established fact that a reader will be distracted by the readable content
+                            of a page when looking at its layout.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-center">
+                        <img t-att-src="'/theme_base_tailwind/static/src/img/brand-light-01.svg'" alt="Brand" class="h-8 mx-auto" />
+                        <img t-att-src="'/theme_base_tailwind/static/src/img/brand-light-02.svg'" alt="Brand" class="h-8 mx-auto" />
+                        <img t-att-src="'/theme_base_tailwind/static/src/img/brand-light-03.svg'" alt="Brand" class="h-8 mx-auto" />
+                        <img t-att-src="'/theme_base_tailwind/static/src/img/brand-light-04.svg'" alt="Brand" class="h-8 mx-auto" />
+                        <img t-att-src="'/theme_base_tailwind/static/src/img/brand-light-05.svg'" alt="Brand" class="h-8 mx-auto" />
+                        <img t-att-src="'/theme_base_tailwind/static/src/img/brand-light-06.svg'" alt="Brand" class="h-8 mx-auto" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog section -->
+            <section id="blog" class="py-20 bg-gray-50 dark:bg-gray-900">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-2">
+                            Latest Blogs &amp; News
+                        </h2>
+                        <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                            It is a long established fact that a reader will be distracted by the readable content
+                            of a page when looking at its layout.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Blog item 1 -->
+                        <div class="rounded-lg overflow-hidden shadow">
+                            <div class="relative">
+                                <img t-att-src="'/theme_base_tailwind/static/src/img/blog-01.png'" alt="Blog" class="w-full h-48 object-cover" />
+                                <a href="#" class="absolute bottom-4 right-4 bg-blue-600 text-white px-4 py-2 rounded shadow">Read More</a>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-400 mb-2">
+                                    <div class="flex items-center space-x-1">
+                                        <img t-att-src="'/theme_base_tailwind/static/src/img/icon-man.svg'" alt="User" class="w-4 h-4" />
+                                        <span>Musharof Chy</span>
+                                    </div>
+                                    <div class="flex items-center space-x-1">
+                                        <img t-att-src="'/theme_base_tailwind/static/src/img/icon-calender.svg'" alt="Date" class="w-4 h-4" />
+                                        <span>25 Dec, 2025</span>
+                                    </div>
+                                </div>
+                                <h4 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+                                    Free advertising for your online business
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- Blog item 2 -->
+                        <div class="rounded-lg overflow-hidden shadow">
+                            <div class="relative">
+                                <img t-att-src="'/theme_base_tailwind/static/src/img/blog-02.png'" alt="Blog" class="w-full h-48 object-cover" />
+                                <a href="#" class="absolute bottom-4 right-4 bg-blue-600 text-white px-4 py-2 rounded shadow">Read More</a>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-400 mb-2">
+                                    <div class="flex items-center space-x-1">
+                                        <img t-att-src="'/theme_base_tailwind/static/src/img/icon-man.svg'" alt="User" class="w-4 h-4" />
+                                        <span>Musharof Chy</span>
+                                    </div>
+                                    <div class="flex items-center space-x-1">
+                                        <img t-att-src="'/theme_base_tailwind/static/src/img/icon-calender.svg'" alt="Date" class="w-4 h-4" />
+                                        <span>25 Dec, 2025</span>
+                                    </div>
+                                </div>
+                                <h4 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+                                    9 simple ways to improve your design skills
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- Blog item 3 -->
+                        <div class="rounded-lg overflow-hidden shadow">
+                            <div class="relative">
+                                <img t-att-src="'/theme_base_tailwind/static/src/img/blog-03.png'" alt="Blog" class="w-full h-48 object-cover" />
+                                <a href="#" class="absolute bottom-4 right-4 bg-blue-600 text-white px-4 py-2 rounded shadow">Read More</a>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-400 mb-2">
+                                    <div class="flex items-center space-x-1">
+                                        <img t-att-src="'/theme_base_tailwind/static/src/img/icon-man.svg'" alt="User" class="w-4 h-4" />
+                                        <span>Musharof Chy</span>
+                                    </div>
+                                    <div class="flex items-center space-x-1">
+                                        <img t-att-src="'/theme_base_tailwind/static/src/img/icon-calender.svg'" alt="Date" class="w-4 h-4" />
+                                        <span>25 Dec, 2025</span>
+                                    </div>
+                                </div>
+                                <h4 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+                                    Tips to quickly improve your coding speed
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact section -->
+            <section id="contact" class="py-20">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-2">
+                            Let’s Stay Connected
+                        </h2>
+                        <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                            It is a long established fact that a reader will be distracted by the readable content
+                            of a page when looking at its layout.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div class="relative p-8 bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden">
+                            <!-- Decorative shapes -->
+                            <img t-att-src="'/theme_base_tailwind/static/src/img/shape-03.svg'" alt="Shape" class="absolute top-0 right-0 w-16 opacity-50" />
+                            <img t-att-src="'/theme_base_tailwind/static/src/img/shape-06.svg'" alt="Shape" class="absolute bottom-0 left-0 w-20 opacity-50" />
+                            <div class="relative space-y-4">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Email Address</h4>
+                                    <p><a href="#" class="text-blue-600">support@startup.com</a></p>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Office Location</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">76/A, Green valle, Califonia USA.</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Phone Number</h4>
+                                    <p><a href="#" class="text-blue-600">+009 8754 3433 223</a></p>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Skype Email</h4>
+                                    <p><a href="#" class="text-blue-600">example@yourmail.com</a></p>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Social Media</h4>
+                                    <ul class="flex space-x-4 mt-2">
+                                        <li><a href="#" class="text-blue-600 hover:text-blue-800"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="text-blue-600 hover:text-blue-800"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="text-blue-600 hover:text-blue-800"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="#" class="text-blue-600 hover:text-blue-800"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contact form placeholder for builder modifications -->
+                        <div>
+                            <form class="space-y-4">
+                                <div>
+                                    <label class="block text-gray-700 dark:text-gray-300 mb-1" for="name">Your Name</label>
+                                    <input id="name" name="name" type="text" class="w-full border rounded px-4 py-2" placeholder="Enter your name" />
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 dark:text-gray-300 mb-1" for="email">Email</label>
+                                    <input id="email" name="email" type="email" class="w-full border rounded px-4 py-2" placeholder="Enter your email" />
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 dark:text-gray-300 mb-1" for="message">Message</label>
+                                    <textarea id="message" name="message" rows="5" class="w-full border rounded px-4 py-2" placeholder="Your message"></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </t>
+    </template>
+</odoo>

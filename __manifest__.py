@@ -1,12 +1,12 @@
 {
-    'name': 'Base Tailwind Theme',
+    'name': 'Tailwind Theme',
     # Short description for the apps store.  A detailed description and
     # screenshots are provided in static/description/index.html as per the
     # Odoo vendor guidelines【312700953233289†L240-L256】.
-    'description': 'A modern Tailwind‑powered website theme for Odoo that replicates the Base Tailwind corporate template. Includes a fully editable homepage and layouts built with Tailwind CSS.',
+    'description': 'A modern Tailwind powered website theme for Odoo. Includes a fully editable homepage and layouts built with Tailwind CSS.',
     'category': 'Website/Theme',
     'version': '19.0.1.0.0',
-    'author': 'Your Company',
+    'author': 'Kiuw',
     'license': 'LGPL-3',
     # Set a price and currency for the theme.  According to the Odoo vendor
     # guidelines, the minimum price is 9 EUR if the module is paid【338510115502247†L256-L259】.
@@ -38,5 +38,5 @@
     # Optionally define a support email for clients.  This address will
     # be visible to customers who purchase the theme and is recommended by
     # the Odoo Apps guidelines【338510115502247†L256-L263】.
-    'support': 'support@example.com',
+    'support': 'julesndanga7@gmail.com',
 }

@@ -3,7 +3,7 @@
         This file extends the frontend assets to load our Tailwind CSS framework
         and any other static resources. Using a separate XML file for assets
         keeps the manifest clean. The Tailwind CSS file is loaded via CDN as
-        recommended for light themes. Should you wish to self‑host or modify
+        recommended for light themes. Should you wish to self-host or modify
         Tailwind, you could copy the compiled CSS into ``static/src/css`` and
         reference it here instead of the CDN URL.
     -->

@@ -1,7 +1,7 @@
 {
-    'name': 'Tailwind Theme - Modern Business Website',
-    # Short description for the apps store. A detailed description and
-    # screenshots are provided in static/description/index.html
+    'name': 'Tailwind Business Theme',
+    'summary': 'Modern, high-converting website theme for startups and businesses',
+    # Detailed description and screenshots in static/description/index.html
     'description': '''
         Launch a stunning, high-converting website in minutes. Premium Tailwind-powered theme with 10+ pre-built sections: 
         Hero, Services, About, Pricing, Portfolio, Testimonials, Blog & Contact. Fully responsive & customizable with 
@@ -12,7 +12,7 @@
     'author': 'Kiuw',
     'license': 'LGPL-3',
     # Price and currency for the theme
-    'price': 9,
+    'price': 30,
     'currency': 'EUR',
     'depends': ['website'],
     'installable': True,

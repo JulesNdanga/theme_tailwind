@@ -1,8 +1,12 @@
 {
-    'name': 'Tailwind Theme',
+    'name': 'Tailwind Theme - Modern Business Website',
     # Short description for the apps store. A detailed description and
     # screenshots are provided in static/description/index.html
-    'description': 'A modern Tailwind powered website theme for Odoo. Includes a fully editable homepage and layouts built with Tailwind CSS.',
+    'description': '''
+        Launch a stunning, high-converting website in minutes. Premium Tailwind-powered theme with 10+ pre-built sections: 
+        Hero, Services, About, Pricing, Portfolio, Testimonials, Blog & Contact. Fully responsive & customizable with 
+        Odoo's drag-and-drop builder. Perfect for startups, agencies, SaaS & online businesses. No coding required!
+    ''',
     'category': 'Theme/Creative',
     'version': '19.0.1.0.0',
     'author': 'Kiuw',

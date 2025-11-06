@@ -1,0 +1,15 @@
+# Documentation locale (pas pour les acheteurs)
+*.md
+!theme_tailwind/doc/*.rst
+!README.md
+
+# Fichiers systèmes
+.DS_Store
+Thumbs.db
+*.pyc
+__pycache__/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

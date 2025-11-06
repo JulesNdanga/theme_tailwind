@@ -3,7 +3,7 @@
     # Short description for the apps store. A detailed description and
     # screenshots are provided in static/description/index.html
     'description': 'A modern Tailwind powered website theme for Odoo. Includes a fully editable homepage and layouts built with Tailwind CSS.',
-    'category': 'Website/Theme',
+    'category': 'Theme/Creative',
     'version': '19.0.1.0.0',
     'author': 'Kiuw',
     'license': 'LGPL-3',
@@ -11,6 +11,7 @@
     'price': 9,
     'currency': 'EUR',
     'depends': ['website'],
+    'installable': True,
     'data': [
         'views/assets.xml',
         'views/home.xml',

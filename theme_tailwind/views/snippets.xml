@@ -1,0 +1,293 @@
+<odoo>
+    <!--
+        Custom Snippets for Tailwind Theme
+        These are drag-and-drop blocks available in the website builder
+    -->
+    
+    <!-- 1. Hero Section Snippet -->
+    <template id="s_tailwind_hero" name="Tailwind Hero Section">
+        <section class="s_tailwind_hero relative overflow-hidden bg-gradient-to-br from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="transform hover:scale-105 transition duration-300">
+                        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-white mb-6">
+                            <t t-esc="'Transform Your Business Today'"/>
+                        </h1>
+                        <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
+                            <t t-esc="'Modern solutions for modern businesses. Get started with our premium services.'"/>
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="#" class="inline-block bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-4 px-8 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 text-center">
+                                <t t-esc="'Get Started'"/>
+                            </a>
+                            <a href="#" class="inline-block bg-white dark:bg-gray-800 text-blue-600 dark:text-blue-400 font-bold py-4 px-8 rounded-lg shadow-lg border-2 border-blue-600 hover:bg-blue-50 dark:hover:bg-gray-700 transform hover:scale-105 transition duration-300 text-center">
+                                <t t-esc="'Learn More'"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hidden lg:block">
+                        <img src="/web/image/website.s_cover_default_image" alt="Hero" class="w-full h-auto rounded-lg shadow-2xl"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    
+    <!-- 2. Features Grid Snippet -->
+    <template id="s_tailwind_features" name="Tailwind Features Grid">
+        <section class="s_tailwind_features py-20 bg-gray-50 dark:bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
+                        <t t-esc="'Our Key Features'"/>
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                        <t t-esc="'Everything you need to succeed in one place'"/>
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+                        <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+                            <t t-esc="'Fast & Reliable'"/>
+                        </h4>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            <t t-esc="'Lightning-fast performance you can count on'"/>
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+                        <div class="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+                            <t t-esc="'Secure Platform'"/>
+                        </h4>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            <t t-esc="'Enterprise-grade security for your data'"/>
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+                        <div class="w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+                            <t t-esc="'Great Value'"/>
+                        </h4>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            <t t-esc="'Affordable pricing that fits your budget'"/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    
+    <!-- 3. Pricing Table Snippet -->
+    <template id="s_tailwind_pricing" name="Tailwind Pricing Table">
+        <section class="s_tailwind_pricing py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
+                        <t t-esc="'Choose Your Plan'"/>
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                        <t t-esc="'Flexible pricing for businesses of all sizes'"/>
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Starter -->
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 border border-gray-200 dark:border-gray-700">
+                        <h4 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">
+                            <t t-esc="'Starter'"/>
+                        </h4>
+                        <div class="mb-6">
+                            <span class="text-5xl font-bold text-gray-800 dark:text-white">$29</span>
+                            <span class="text-gray-600 dark:text-gray-400">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8 text-gray-600 dark:text-gray-400">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <t t-esc="'10 GB Storage'"/>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <t t-esc="'Email Support'"/>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <t t-esc="'Basic Features'"/>
+                            </li>
+                        </ul>
+                        <a href="#" class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-center transform hover:scale-105 transition duration-300">
+                            <t t-esc="'Get Started'"/>
+                        </a>
+                    </div>
+                    
+                    <!-- Professional (Featured) -->
+                    <div class="bg-gradient-to-br from-blue-600 to-blue-700 p-8 rounded-lg shadow-2xl transform scale-105 hover:scale-110 transition duration-300 relative">
+                        <div class="absolute top-0 right-0 bg-yellow-400 text-gray-900 px-4 py-1 rounded-bl-lg rounded-tr-lg font-bold text-sm">
+                            <t t-esc="'Popular'"/>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-4">
+                            <t t-esc="'Professional'"/>
+                        </h4>
+                        <div class="mb-6">
+                            <span class="text-5xl font-bold text-white">$79</span>
+                            <span class="text-blue-100">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8 text-white">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-300 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <t t-esc="'100 GB Storage'"/>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-300 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <t t-esc="'Priority Support'"/>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-300 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <t t-esc="'All Features'"/>
+                            </li>
+                        </ul>
+                        <a href="#" class="block w-full bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-6 rounded-lg text-center transform hover:scale-105 transition duration-300">
+                            <t t-esc="'Get Started'"/>
+                        </a>
+                    </div>
+                    
+                    <!-- Enterprise -->
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 border border-gray-200 dark:border-gray-700">
+                        <h4 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">
+                            <t t-esc="'Enterprise'"/>
+                        </h4>
+                        <div class="mb-6">
+                            <span class="text-5xl font-bold text-gray-800 dark:text-white">$199</span>
+                            <span class="text-gray-600 dark:text-gray-400">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8 text-gray-600 dark:text-gray-400">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <t t-esc="'Unlimited Storage'"/>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <t t-esc="'24/7 Phone Support'"/>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <t t-esc="'Custom Solutions'"/>
+                            </li>
+                        </ul>
+                        <a href="#" class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-center transform hover:scale-105 transition duration-300">
+                            <t t-esc="'Contact Us'"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    
+    <!-- 4. CTA Banner Snippet -->
+    <template id="s_tailwind_cta" name="Tailwind CTA Banner">
+        <section class="s_tailwind_cta bg-gradient-to-r from-blue-600 to-purple-600 py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                    <t t-esc="'Ready to Get Started?'"/>
+                </h2>
+                <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                    <t t-esc="'Join thousands of satisfied customers and transform your business today'"/>
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#" class="inline-block bg-white text-blue-600 hover:bg-gray-100 font-bold py-4 px-12 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                        <t t-esc="'Start Free Trial'"/>
+                    </a>
+                    <a href="#" class="inline-block bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-600 font-bold py-4 px-12 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                        <t t-esc="'Contact Sales'"/>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </template>
+    
+    <!-- 5. Testimonial Card Snippet -->
+    <template id="s_tailwind_testimonial" name="Tailwind Testimonial">
+        <section class="s_tailwind_testimonial py-20 bg-gray-50 dark:bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white dark:bg-gray-800 p-8 md:p-12 rounded-2xl shadow-2xl relative">
+                        <div class="absolute top-0 left-0 transform -translate-x-4 -translate-y-4">
+                            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="text-center pt-8">
+                            <p class="text-xl text-gray-700 dark:text-gray-300 mb-8 italic">
+                                <t t-esc="'Working with this team has been a game-changer for our business. Their professionalism and expertise are unmatched.'"/>
+                            </p>
+                            <div class="flex items-center justify-center space-x-4">
+                                <img src="/web/image/website.s_default_avatar_square" alt="Client" class="w-16 h-16 rounded-full border-4 border-blue-600"/>
+                                <div class="text-left">
+                                    <h5 class="font-bold text-gray-800 dark:text-white">
+                                        <t t-esc="'John Doe'"/>
+                                    </h5>
+                                    <p class="text-gray-600 dark:text-gray-400 text-sm">
+                                        <t t-esc="'CEO, Example Company'"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    
+    <!-- Register snippets in the builder -->
+    <template id="snippet_options" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_structure']//t[@t-snippet][last()]" position="after">
+            <t t-snippet="theme_tailwind.s_tailwind_hero" 
+               t-thumbnail="/theme_tailwind/static/description/icon.png"
+               string="Tailwind Hero"/>
+            <t t-snippet="theme_tailwind.s_tailwind_features" 
+               t-thumbnail="/theme_tailwind/static/description/icon.png"
+               string="Tailwind Features"/>
+            <t t-snippet="theme_tailwind.s_tailwind_pricing" 
+               t-thumbnail="/theme_tailwind/static/description/icon.png"
+               string="Tailwind Pricing"/>
+            <t t-snippet="theme_tailwind.s_tailwind_cta" 
+               t-thumbnail="/theme_tailwind/static/description/icon.png"
+               string="Tailwind CTA"/>
+            <t t-snippet="theme_tailwind.s_tailwind_testimonial" 
+               t-thumbnail="/theme_tailwind/static/description/icon.png"
+               string="Tailwind Testimonial"/>
+        </xpath>
+    </template>
+    
+</odoo>

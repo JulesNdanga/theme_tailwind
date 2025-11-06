@@ -1,0 +1,219 @@
+# Translation for Tailwind Business Theme
+# French (fr) translation
+msgid ""
+msgstr ""
+"Project-Id-Version: Tailwind Business Theme 19.0\n"
+"Report-Msgid-Bugs-To: julesndanga7@gmail.com\n"
+"POT-Creation-Date: 2025-11-06 04:00+0000\n"
+"PO-Revision-Date: 2025-11-06 04:00+0000\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: theme_tailwind
+#: model:ir.ui.view,arch_db:theme_tailwind.contact_form_section
+msgid "Get In Touch"
+msgstr "Contactez-nous"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contact_form_section
+msgid "Have a question or want to work together? Fill out the form below and we will get back to you soon."
+msgstr "Vous avez une question ou souhaitez travailler ensemble ? Remplissez le formulaire ci-dessous et nous vous répondrons rapidement."
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contact_form_section
+msgid "Your Name"
+msgstr "Votre nom"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contact_form_section
+msgid "Enter your full name"
+msgstr "Entrez votre nom complet"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contact_form_section
+msgid "Email Address"
+msgstr "Adresse e-mail"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contact_form_section
+msgid "your@email.com"
+msgstr "votre@email.com"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contact_form_section
+msgid "Phone Number"
+msgstr "Numéro de téléphone"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contact_form_section
+msgid "(Optional)"
+msgstr "(Optionnel)"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contact_form_section
+msgid "Company Name"
+msgstr "Nom de l'entreprise"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contact_form_section
+msgid "Your company (Optional)"
+msgstr "Votre entreprise (Optionnel)"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contact_form_section
+msgid "Subject"
+msgstr "Sujet"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contact_form_section
+msgid "What is this about?"
+msgstr "De quoi s'agit-il ?"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contact_form_section
+msgid "Message"
+msgstr "Message"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contact_form_section
+msgid "Tell us more about your inquiry..."
+msgstr "Parlez-nous de votre demande..."
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contact_form_section
+msgid "I agree to the "
+msgstr "J'accepte la "
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contact_form_section
+msgid "privacy policy"
+msgstr "politique de confidentialité"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contact_form_section
+msgid " and consent to having this website store my submitted information."
+msgstr " et consens à ce que ce site web stocke les informations que j'ai soumises."
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contact_form_section
+msgid "Send Message"
+msgstr "Envoyer le message"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contact_form_section
+msgid "We typically respond within 24 hours"
+msgstr "Nous répondons généralement sous 24 heures"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contactus_thank_you
+msgid "Thank You"
+msgstr "Merci"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contactus_thank_you
+msgid "Thank You for Contacting Us!"
+msgstr "Merci de nous avoir contactés !"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contactus_thank_you
+msgid "Your message has been successfully sent. We will get back to you within 24 hours."
+msgstr "Votre message a été envoyé avec succès. Nous vous répondrons dans les 24 heures."
+
+#: model:ir.ui.view,arch_db:theme_tailwind.contactus_thank_you
+msgid "Return to Homepage"
+msgstr "Retour à l'accueil"
+
+#. Snippets translations
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_hero
+msgid "Transform Your Business Today"
+msgstr "Transformez votre entreprise aujourd'hui"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_hero
+msgid "Modern solutions for modern businesses. Get started with our premium services."
+msgstr "Des solutions modernes pour les entreprises modernes. Commencez avec nos services premium."
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_hero
+msgid "Get Started"
+msgstr "Commencer"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_hero
+msgid "Learn More"
+msgstr "En savoir plus"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_features
+msgid "Our Key Features"
+msgstr "Nos principales fonctionnalités"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_features
+msgid "Everything you need to succeed in one place"
+msgstr "Tout ce dont vous avez besoin pour réussir en un seul endroit"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_features
+msgid "Fast & Reliable"
+msgstr "Rapide et fiable"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_features
+msgid "Lightning-fast performance you can count on"
+msgstr "Des performances ultra-rapides sur lesquelles vous pouvez compter"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_features
+msgid "Secure Platform"
+msgstr "Plateforme sécurisée"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_features
+msgid "Enterprise-grade security for your data"
+msgstr "Sécurité de niveau entreprise pour vos données"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_features
+msgid "Great Value"
+msgstr "Excellent rapport qualité-prix"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_features
+msgid "Affordable pricing that fits your budget"
+msgstr "Tarification abordable qui convient à votre budget"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_pricing
+msgid "Choose Your Plan"
+msgstr "Choisissez votre plan"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_pricing
+msgid "Flexible pricing for businesses of all sizes"
+msgstr "Tarification flexible pour entreprises de toutes tailles"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_pricing
+msgid "Starter"
+msgstr "Débutant"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_pricing
+msgid "Professional"
+msgstr "Professionnel"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_pricing
+msgid "Enterprise"
+msgstr "Entreprise"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_pricing
+msgid "Popular"
+msgstr "Populaire"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_cta
+msgid "Ready to Get Started?"
+msgstr "Prêt à commencer ?"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_cta
+msgid "Join thousands of satisfied customers and transform your business today"
+msgstr "Rejoignez des milliers de clients satisfaits et transformez votre entreprise aujourd'hui"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_cta
+msgid "Start Free Trial"
+msgstr "Commencer l'essai gratuit"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.s_tailwind_cta
+msgid "Contact Sales"
+msgstr "Contacter les ventes"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.custom_nav_menu
+msgid "Features"
+msgstr "Fonctionnalités"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.custom_nav_menu
+msgid "About"
+msgstr "À propos"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.custom_nav_menu
+msgid "Services"
+msgstr "Services"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.custom_nav_menu
+msgid "Pricing"
+msgstr "Tarifs"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.custom_nav_menu
+msgid "Blog"
+msgstr "Blog"
+
+#: model:ir.ui.view,arch_db:theme_tailwind.custom_nav_menu
+msgid "Contact"
+msgstr "Contact"

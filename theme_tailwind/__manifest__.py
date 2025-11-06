@@ -18,7 +18,10 @@
     'installable': True,
     'data': [
         'views/assets.xml',
+        'views/header.xml',
         'views/home.xml',
+        'views/contact_form.xml',
+        'views/snippets.xml',
     ],
     'assets': {
         # Include the Tailwind CSS framework from a CDN and any custom assets

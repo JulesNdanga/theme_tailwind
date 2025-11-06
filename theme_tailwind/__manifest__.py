@@ -29,7 +29,7 @@
         ],
     },
     # Cover thumbnail and screenshots for the app store
-    'images': ['static/description/images/main_screenshot.webp'],
+    'images': ['static/description/images/main_screenshot.png'],
     # Declare this module as a theme so it appears in the theme selector
     'auto_install': False,
     'application': False,

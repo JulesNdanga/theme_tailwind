@@ -429,74 +429,8 @@
                 </div>
             </section>
 
-            <!-- Contact section -->
-            <section id="contact" class="py-20">
-                <div class="container mx-auto px-6">
-                    <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-2">
-                            Let’s Stay Connected
-                        </h2>
-                        <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                            It is a long established fact that a reader will be distracted by the readable content
-                            of a page when looking at its layout.
-                        </p>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                        <div class="relative p-8 bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden">
-                            <!-- Decorative shapes -->
-                            <img t-att-src="'/theme_tailwind/static/src/img/shape-03.svg'" alt="Shape" class="absolute top-0 right-0 w-16 opacity-50" />
-                            <img t-att-src="'/theme_tailwind/static/src/img/shape-06.svg'" alt="Shape" class="absolute bottom-0 left-0 w-20 opacity-50" />
-                            <div class="relative space-y-4">
-                                <div>
-                                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Email Address</h4>
-                                    <p><a href="#" class="text-blue-600">support@startup.com</a></p>
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Office Location</h4>
-                                    <p class="text-gray-600 dark:text-gray-400">76/A, Green valle, Califonia USA.</p>
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Phone Number</h4>
-                                    <p><a href="#" class="text-blue-600">+009 8754 3433 223</a></p>
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Skype Email</h4>
-                                    <p><a href="#" class="text-blue-600">example@yourmail.com</a></p>
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Social Media</h4>
-                                    <ul class="flex space-x-4 mt-2">
-                                        <li><a href="#" class="text-blue-600 hover:text-blue-800"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#" class="text-blue-600 hover:text-blue-800"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#" class="text-blue-600 hover:text-blue-800"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="#" class="text-blue-600 hover:text-blue-800"><i class="fa fa-linkedin"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Contact form placeholder for builder modifications -->
-                        <div>
-                            <form class="space-y-4">
-                                <div>
-                                    <label class="block text-gray-700 dark:text-gray-300 mb-1" for="name">Your Name</label>
-                                    <input id="name" name="name" type="text" class="w-full border rounded px-4 py-2" placeholder="Enter your name" />
-                                </div>
-                                <div>
-                                    <label class="block text-gray-700 dark:text-gray-300 mb-1" for="email">Email</label>
-                                    <input id="email" name="email" type="email" class="w-full border rounded px-4 py-2" placeholder="Enter your email" />
-                                </div>
-                                <div>
-                                    <label class="block text-gray-700 dark:text-gray-300 mb-1" for="message">Message</label>
-                                    <textarea id="message" name="message" rows="5" class="w-full border rounded px-4 py-2" placeholder="Your message"></textarea>
-                                </div>
-                                <div>
-                                    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded">Send Message</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <!-- Contact section - Using functional CRM form -->
+            <t t-call="theme_tailwind.contact_form_section"/>
         </t>
     </template>
 </odoo>

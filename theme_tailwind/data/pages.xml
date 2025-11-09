@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Homepage avec le contenu du template Tailwind -->
+    <record id="homepage" model="website.page">
+        <field name="name">Home</field>
+        <field name="key">theme_tailwind.homepage</field>
+        <field name="url">/</field>
+        <field name="type">qweb</field>
+        <field name="website_published">True</field>
+        <field name="is_published">True</field>
+        <field name="arch" type="xml">
+            <t name="Homepage" t-name="theme_tailwind.homepage">
+                <t t-call="website.layout">
+                    <div id="wrap" class="oe_structure">
+                        <!-- Hero section avec Tailwind -->
+                        <section class="relative overflow-hidden bg-white dark:bg-gray-900 py-20">
+                            <div class="container mx-auto relative z-10 px-6">
+                                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                                    <div>
+                                        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-white mb-6">
+                                            We specialize in UI/UX, Web Development, Digital Marketing.
+                                        </h1>
+                                        <p class="text-gray-600 dark:text-gray-300 mb-8 max-w-xl">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                                            fringilla magna mauris. Nulla fermentum viverra sem eu rhoncus
+                                            consequat varius nisi quis, posuere magna.
+                                        </p>
+                                        <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                                            <a href="/contactus" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded shadow">
+                                                Get Started Now
+                                            </a>
+                                            <span class="text-gray-700 dark:text-gray-400 text-sm">
+                                                <strong class="font-semibold">Call us (0123) 456-789</strong> For any question or concern
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hidden lg:block">
+                                        <img src="/web/image/website.library_image_10" alt="Hero" class="w-full h-auto rounded-lg shadow-xl"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Features/Services section -->
+                        <section class="py-20 bg-gray-50 dark:bg-gray-800">
+                            <div class="container mx-auto px-6">
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                    <!-- Service 1 -->
+                                    <div class="bg-white dark:bg-gray-900 rounded-lg p-8 shadow-md hover:shadow-xl transition-shadow">
+                                        <div class="w-16 h-16 bg-pink-100 dark:bg-pink-900 rounded-full flex items-center justify-center mb-4">
+                                            <svg class="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">24/7 Support</h3>
+                                        <p class="text-gray-600 dark:text-gray-400">
+                                            Lorem ipsum dolor sit amet elit. Voluptatibus
+                                            eaque maxime quisquam neque eum fuga.
+                                        </p>
+                                    </div>
+
+                                    <!-- Service 2 -->
+                                    <div class="bg-white dark:bg-gray-900 rounded-lg p-8 shadow-md hover:shadow-xl transition-shadow">
+                                        <div class="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mb-4">
+                                            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Take Ownership</h3>
+                                        <p class="text-gray-600 dark:text-gray-400">
+                                            Lorem ipsum dolor sit amet elit. Voluptatibus
+                                            eaque maxime quisquam neque eum fuga.
+                                        </p>
+                                    </div>
+
+                                    <!-- Service 3 -->
+                                    <div class="bg-white dark:bg-gray-900 rounded-lg p-8 shadow-md hover:shadow-xl transition-shadow">
+                                        <div class="w-16 h-16 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center mb-4">
+                                            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Team Work</h3>
+                                        <p class="text-gray-600 dark:text-gray-400">
+                                            Lorem ipsum dolor sit amet elit. Voluptatibus
+                                            eaque maxime quisquam neque eum fuga.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Call to Action -->
+                        <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+                            <div class="container mx-auto px-6 text-center">
+                                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                                    Ready to get started?
+                                </h2>
+                                <p class="text-blue-100 mb-8 text-lg max-w-2xl mx-auto">
+                                    Join thousands of satisfied customers who trust our services.
+                                </p>
+                                <a href="/contactus" class="inline-block bg-white text-blue-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-lg shadow-xl transform hover:scale-105 transition-all">
+                                    Contact Us Today
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>

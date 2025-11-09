@@ -19,10 +19,15 @@
     'data': [
         'data/generate_primary_template.xml',
         'data/ir_asset.xml',
+        'data/pages_full.xml',
         'views/snippets/s_cover.xml',
     ],
     # Cover thumbnail and screenshots for the app store
     'images': ['static/description/images/main_screenshot.png'],
+    # Configurateur de thème - définit quels snippets utiliser lors de l'activation
+    'configurator_snippets': {
+        'homepage': False,  # Ne pas utiliser le configurateur automatique, on a notre propre page
+    },
     # Declare this module as a theme so it appears in the theme selector
     'auto_install': False,
     # Support email for customers

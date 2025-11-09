@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="theme_tailwind.tailwind_css_cdn" model="theme.ir.asset">
+    <field name="key">theme_tailwind.tailwind_css_cdn</field>
+    <field name="name">Tailwind CSS CDN</field>
+    <field name="bundle">website.assets_frontend</field>
+    <field name="path">https://cdn.jsdelivr.net/npm/tailwindcss@3.1.8/dist/tailwind.min.css</field>
+</record>
+
+</odoo>

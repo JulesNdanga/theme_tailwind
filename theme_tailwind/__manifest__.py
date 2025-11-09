@@ -7,35 +7,24 @@
         Hero, Services, About, Pricing, Portfolio, Testimonials, Blog & Contact. Fully responsive & customizable with 
         Odoo's drag-and-drop builder. Perfect for startups, agencies, SaaS & online businesses. No coding required!
     ''',
-    'category': 'Theme/Creative',
+    'category': 'Theme',
     'version': '19.0.1.0.0',
     'author': 'Kiuw',
     'license': 'LGPL-3',
     # Price and currency for the theme
     'price': 30,
     'currency': 'EUR',
-    'depends': ['website'],
+    'depends': ['theme_common'],
     'installable': True,
     'data': [
-        'views/assets.xml',
-        'views/header.xml',
-        'views/home.xml',
-        'views/contact_form.xml',
-        'views/snippets.xml',
+        'data/generate_primary_template.xml',
+        'data/ir_asset.xml',
+        'views/snippets/s_cover.xml',
     ],
-    'assets': {
-        # Include the Tailwind CSS framework from a CDN and any custom assets
-        'web.assets_frontend': [
-            # Tailwind CSS – loaded via CDN to match the original template
-            'https://cdn.jsdelivr.net/npm/tailwindcss@3.1.8/dist/tailwind.min.css',
-            # Custom font definitions or variables could be added here if needed
-        ],
-    },
     # Cover thumbnail and screenshots for the app store
     'images': ['static/description/images/main_screenshot.png'],
     # Declare this module as a theme so it appears in the theme selector
     'auto_install': False,
-    'application': False,
     # Support email for customers
     'support': 'julesndanga7@gmail.com',
 }

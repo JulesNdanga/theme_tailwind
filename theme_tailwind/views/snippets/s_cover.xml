@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cover" inherit_id="website.s_cover">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="bg-gradient-to-r from-blue-500 to-purple-600" separator=" "/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        We specialize in UI/UX, Web Development, Digital Marketing
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Transform your digital presence with our expert services. We create stunning, high-converting websites tailored to your business needs.
+    </xpath>
+</template>
+
+</odoo>
